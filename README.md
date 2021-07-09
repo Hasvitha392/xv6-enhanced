@@ -20,8 +20,9 @@ The appropriate scheduler flag is chosen.
 
 
 ### waitx syscall :
-The waitx syscall takes in two parameters and return the creation time, end-time, and total time of a process along with the run time and waittime of the process.
 	status = waitx(&a, &b);
+The waitx syscall takes in two parameters and return the creation time, end-time, and total time of a process along with the run time and waittime of the process.
+	
 
 #### Tester file - time command 
 
@@ -31,12 +32,14 @@ The waitx syscall takes in two parameters and return the creation time, end-time
 
 
 ### ps syscall :
-The ps syscall gives a detailed list of all the processes present in the system at that particular instant.
 	cprintf("PID Priority   State   rtime wtime n_run curr_q q0 q1 q2 q3 q4 \n");
+The ps syscall gives a detailed list of all the processes present in the system at that particular instant.
+	
 
 ### setPriority syscall :
-The set_priority syscall takes in two parameters (PRIORITY,PID) and sets the priority of the process with that PID to the one passed as PRIORITY parameter.
 	setPriority(atoi(argv[2]),atoi(argv[1]);	
+The set_priority syscall takes in two parameters (PRIORITY,PID) and sets the priority of the process with that PID to the one passed as PRIORITY parameter.
+	
 
 ## Scheduler Overview
 
